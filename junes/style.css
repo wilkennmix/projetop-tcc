@@ -1,0 +1,81 @@
+body{
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-style: arial;
+    color: beige;
+}
+
+.container {
+    background-size: contain;  
+    background-color: rgb(55, 139, 15);
+    display: grid;
+    gap: 2px;
+    grid-template-columns: auto auto auto 200px;
+    grid-auto-rows: 100px 200px 150px 100px 100px;
+    grid-template-areas: 
+        "h h h h"
+        "c c c s"
+        "c c c s"
+        "c c c s"
+        "f f f f"
+     ;
+
+}
+
+.container div {
+    
+    
+}
+
+.header {
+    background-image: linear-gradient(rgb(162, 176, 190), rgb(55, 75, 92));
+
+    grid-area: h;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+      
+    
+    
+     
+} 
+.texto{
+    font-size: 23px;
+    color: rgb(23, 42, 207);
+    font-weight: 800;
+    margin-top: 0%;
+    
+
+}
+.texto1{
+    font-size: 10px;
+    color: rgb(19, 18, 18);
+    margin-bottom: 0%;
+    font-weight: 700;
+    
+
+}
+
+.sidebar {
+    background-color: brown;
+    grid-area: s;
+    background-image: linear-gradient(rgb(162, 176, 190), rgb(55, 75, 92));
+    display: flex;
+}
+
+.contest {
+    grid-area: c;
+    background: url(usar.jpg);
+    background-repeat: no-repeat;
+    
+    
+    
+
+}
+.footer {
+    background-image: linear-gradient(rgb(162, 176, 190), rgb(55, 75, 92));
+    grid-area: f;
+
+}
